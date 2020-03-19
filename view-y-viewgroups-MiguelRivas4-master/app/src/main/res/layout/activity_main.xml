@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TODO (1): Sobre FrameLayout
+     FrameLayout esta pensado para mostrar un solo View
+     pero permite contener más. Pero a partir del segundo elemento, se alinearan
+     enciama de los demás y a la derecha -->
+
+<!--TODO (2): Sobre ViewGroup
+    Todos los ViewGroup primarios deberan definir el espacio de nombre de
+    android. Que habilita las etiquetas para android. Elimine el atributo
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    y el IDE no podra reconocer ninguna etiqueta android -->
+
+<!--
+   TODO (3): Propiedades Requeridas
+   Todos los View deben definer las propiedades
+   android:layout_width
+   android:layout_height -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <!-- TODO (4): Sobre el atributo layout_gravity
+        El atributo android:layout_gravity sirve para indicar al elemento padre
+        como alinear el view que lo define. En este caso centrado en el FrameLayout -->
+
+    <!-- TODO (5): Actividad añada un textview para ser ubicado en la esquina superior derecha -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:text="top 5" />
+    <!-- TODO (6): Actividad añada un textview para ser ubicado en la esquina superior izquierda -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="todo 6 " />
+    <!-- TODO (5): Actividad añada un textview para ser ubicado en la esquina inferior derecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:text="todo 5" />
+
+    <!-- TODO (6): Actividad añada un textview para ser ubicado en la esquina inferior izquierda -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:text="todo 6 " />
+    <!-- TODO (5): Actividad añada un textview para ser ubicado en la esquina abajo al centro -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="todo 5" />
+
+    <!-- TODO (6): Actividad añada un textview para ser ubicado en la esquina arriba al centro -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:text="todo 6 " />
+</FrameLayout>
